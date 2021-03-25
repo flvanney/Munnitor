@@ -1,5 +1,6 @@
 <div class="list-group">
-  <a *ngFor="let i of noti" href="#" class="list-group-item list-group-item-action">
+  <a *ngFor="let i of noti" class="list-group-item list-group-item-action" (click)="actualizarVista(i)">
+    <span *ngIf="i.fueLeida==false" class="badge bg-primary rounded-pill justify-content-right">new</span>
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{i.nombre}}</h5>
       <small>{{i.cabezaGanado}}</small>
