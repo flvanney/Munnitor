@@ -1,1 +1,16 @@
-<p>informes works!</p>
+<div class="bg-secondary text-white">
+<h3>Informes del sistema</h3>
+<hr>
+<h5>Historia por Cabeza de Ganado</h5>
+<hr>
+<a *ngFor="let i of listaganado">
+  <h3 class="mb-1">{{i.cabezaGanado}}</h3>
+  <div *ngFor="let o of i.notificaciones" class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{o.nombre}}</h5>
+    <p class="mb-1">{{o.alerta}}</p>
+  </div>
+</a>
+<hr>
+<h5>Eventos por Fecha</h5>
+
+</div>
