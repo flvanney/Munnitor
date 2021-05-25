@@ -1,0 +1,12 @@
+<div class="list-group">
+  <a *ngFor="let i of vaca" class="list-group-item list-group-item-action" (click)="actualizarVista(i)">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{i.nombre}}</h5>
+      <small>{{i.cabezaGanado}}</small>
+    </div>
+    <p class="mb-1">{{i.cantPasos}}</p>
+    <p>{{i.ultimaTemp}}</p>
+    <p>{{i.tampUltimas24}}</p>
+  </a>
+</div>
+<app-temperatura></app-temperatura>

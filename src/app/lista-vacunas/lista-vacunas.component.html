@@ -1,0 +1,9 @@
+<div class="list-group">
+  <a *ngFor="let i of vac" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{i.nombre}}</h5>
+      <p class="mb-1">{{i.descripcion}}</p>
+    </div>
+    <p class="mb-1">{{i.fecha}}</p>
+  </a>
+</div>
