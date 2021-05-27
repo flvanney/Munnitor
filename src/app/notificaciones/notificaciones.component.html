@@ -1,10 +1,18 @@
-<div class="list-group">
-  <a *ngFor="let i of noti" class="list-group-item list-group-item-action" (click)="actualizarVista(i)">
-    <span *ngIf="i.fueLeida==false" class="badge bg-primary rounded-pill justify-content-right">new</span>
-    <div class="d-flex w-100 justify-content-between">
+<br>
+<h4 style="text-align: center;">Estos son las notificaciones registrados en el sistema</h4>
+<br>
+<div class="container">
+  <br>
+  <div *ngFor="let i of noti" class="row" (click)="actualizarVista(i)">
+
+    <div class="h-100 justify-content-between col">
       <h5 class="mb-1">{{i.nombre}}</h5>
-      <small>{{i.cabezaGanado}}</small>
+      <h6>Numero: {{i.cabezaGanado}}</h6>
+      <p class="mb-1">{{i.alerta}}</p>
     </div>
-    <p class="mb-1">{{i.alerta}}</p>
-  </a>
+    <div class="col-1">
+    <span *ngIf="i.fueLeida==false" class="badge bg-dark rounded-pill">nuevo</span>
+    </div>
+  <hr>
+  </div>
 </div>
