@@ -23,5 +23,6 @@ export interface vaca{
   cantPasos: number;
 }
 export let VACA: vaca[]=[
-  {id: 1, nombre: "Vaca", cabezaGanado:"CG1684064", ultimaTemp: 37, tempUltimas24: [37,37,38,35,35,37,37], cantPasos:5440}
+  {id: 1, nombre: "Vaca", cabezaGanado:"CG1684064", ultimaTemp: 37, tempUltimas24: [37,37,38,35,35,37,37], cantPasos:5440},
+  {id: 2, nombre: "Vaco 2", cabezaGanado:"CG4215126", ultimaTemp: 39, tempUltimas24:[39,39,39,38,39,39,38,37], cantPasos:7637}
 ]

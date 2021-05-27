@@ -1,12 +1,37 @@
-<div class="list-group">
-  <a *ngFor="let i of vaca" class="list-group-item list-group-item-action" (click)="actualizarVista(i)">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">{{i.nombre}}</h5>
-      <small>{{i.cabezaGanado}}</small>
+<h4>Estos son los Individuos registrados en el sistema</h4>
+<br>
+<div class="container border border-dark">
+  <div class="row align-items-center h-100">
+    <div class="col">
+      <h4>Individuo</h4>
     </div>
-    <p class="mb-1">{{i.cantPasos}}</p>
-    <p>{{i.ultimaTemp}}</p>
-    <p>{{i.tampUltimas24}}</p>
-  </a>
+    <div class="col">
+      <h4>Pasos</h4>
+      <span>(Ult 24hs)</span>
+    </div>
+    <div class="col">
+      <h4>Temperatura actual</h4>
+      <span>(En grados Centigrados)</span>
+    </div>
+  </div>
 </div>
-<app-temperatura></app-temperatura>
+<div *ngFor="let i of vaca" class="container border border-top-0 border-dark">
+  <div class="row align-items-center h-100">
+    <div class="col">
+      <h4>{{i.nombre}}</h4>
+      <p>{{i.cabezaGanado}}</p>
+    </div>
+    <div class="col">
+      <i class="bi bi-speedometer2" style="font-size: 3rem;"></i>
+      <h3>{{i.cantPasos}}</h3>
+    </div>
+    <div class="col">
+      <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>
+      <h3>{{i.ultimaTemp}}</h3>
+    </div>
+  </div>
+</div>
+<br>
+<div>
+  <app-temperatura></app-temperatura>
+</div>
