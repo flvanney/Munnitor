@@ -24,7 +24,14 @@ export class TemperaturaComponent implements OnInit {
   public lineChartLegend = true;
 
   public lineChartData: ChartDataSets[] = [
-    { data: TemperaturaComponent.datos, label: 'Temperatura en grados' },
+    { label: 'Temperatura en grados',
+      data: TemperaturaComponent.datos,
+      borderColor: "#343a40",
+      pointBackgroundColor: "#343a40",
+      backgroundColor:"#868e96",
+      pointHoverBorderColor:"#000",
+      lineTension:0
+    },
   ];
 
   constructor() { }
@@ -33,3 +40,4 @@ export class TemperaturaComponent implements OnInit {
   ngOnInit(): void {
   }
 }
+
