@@ -1,0 +1,91 @@
+<br>
+<h4 style="text-align: center;">Complete los campos de la carabana</h4>
+<div class="container">
+  <form [formGroup]="formularioCaravana" (ngSubmit)="cargarFormulario()">
+    <br>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Numero de identificacion Internacional:</label>
+      <div class="col-sm-10">
+       <input class="form-control" type="text" formControlName="idInternacional">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        CUIG:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="CUIG">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Color Caravana:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="colorCaravana">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Digito Verificador:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="digitoVerificador">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+       Numero de Manejo: </label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="numeroManejo">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Numero RENSPA:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="numeroRENSPA">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Marca Fecha de produccion:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="marcaFechaProduccion">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Numero de Impresion:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="numeroImpresion">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+        Fecha Impresion:</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="date" formControlName="fechaImpresion">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col col-form-label">
+       Rango Impresion: </label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" formControlName="rangoImpresion">
+      </div>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" [disabled]="!formularioCaravana.valid" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>

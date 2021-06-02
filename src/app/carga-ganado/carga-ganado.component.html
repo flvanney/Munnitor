@@ -1,0 +1,40 @@
+<br>
+<h4 style="text-align: center;">Complete los campos del individuo</h4>
+<div class="container">
+<form [formGroup]="formularioVaca" (ngSubmit)="cargarFormulario()" class="row gy-2 gx-3 align-items-center">
+<br>
+
+  <div class="col-auto">
+    <label class="form-label">Sexo:
+      <input class="form-control" type="text" formControlName="sexo">
+    </label>
+  </div>
+  <div class="col-auto">
+    <label class="form-label">
+      Cantidad de Servidas:
+      <input class="form-control" type="number" formControlName="cantServidas">
+    </label>
+  </div>
+  <div class="col-auto">
+    <label class="form-label">
+      Peso:
+      <input class="form-control" type="number" formControlName="peso">
+    </label>
+  </div>
+  <div class="col-auto">
+    <label class="form-label">
+      Fecha de Nacimiento:
+      <input class="form-control" type="date" formControlName="fechaNacimiento">
+    </label>
+  </div>
+  <div class="col-auto">
+    <label class="form-label">
+      Descripcion:
+      <input class="form-control" type="text" formControlName="descripcion">
+    </label>
+  </div>
+  <div class="col-auto">
+    <button type="submit" [disabled]="!formularioVaca.valid" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
