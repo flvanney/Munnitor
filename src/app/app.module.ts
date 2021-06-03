@@ -16,6 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TemperaturaComponent } from './graficos/temperatura/temperatura.component';
 import { CargaGanadoComponent } from './carga-ganado/carga-ganado.component';
 import { CargaCaravanaComponent } from './carga-caravana/carga-caravana.component';
+import { InformeIndividuoComponent } from './informe-individuo/informe-individuo.component';
+import { PasosComponent } from './graficos/pasos/pasos.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { CargaCaravanaComponent } from './carga-caravana/carga-caravana.componen
     DashboardComponent,
     TemperaturaComponent,
     CargaGanadoComponent,
-    CargaCaravanaComponent
+    CargaCaravanaComponent,
+    InformeIndividuoComponent,
+    PasosComponent
   ],
   imports: [
     ChartsModule,
@@ -42,6 +46,7 @@ import { CargaCaravanaComponent } from './carga-caravana/carga-caravana.componen
       {path: 'dashboard', component: DashboardComponent},
       {path: 'cargaGanado', component: CargaGanadoComponent},
       {path: 'cargaCaravana', component: CargaCaravanaComponent},
+      {path: 'informeIndividuo', component: InformeIndividuoComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', component: Error404Component},
     ]),
