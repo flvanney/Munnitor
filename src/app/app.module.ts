@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,6 +20,7 @@ import { CargaGanadoComponent } from './carga-ganado/carga-ganado.component';
 import { CargaCaravanaComponent } from './carga-caravana/carga-caravana.component';
 import { InformeIndividuoComponent } from './informe-individuo/informe-individuo.component';
 import { PasosComponent } from './graficos/pasos/pasos.component';
+import { PruebaService } from './services/prueba.service'
 
 @NgModule({
   declarations: [
@@ -50,8 +53,11 @@ import { PasosComponent } from './graficos/pasos/pasos.component';
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', component: Error404Component},
     ]),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    PruebaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
