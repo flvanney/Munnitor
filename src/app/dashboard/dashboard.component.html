@@ -15,19 +15,19 @@
     </div>
   </div>
 </div>
-<div *ngFor="let i of vaca" class="container border-bottom border-dark">
+<div *ngFor="let vaca of vacas" class="container border-bottom border-dark">
   <div class="row align-items-center h-100">
     <div class="col">
-      <h4>{{i.nombre}}</h4>
-      <p>{{i.cabezaGanado}}</p>
+      <h4>Vaca n° {{vaca.idGanado}}</h4>
+      <p>Cuig caravana: {{vaca.cuig}}</p>
     </div>
     <div class="col">
       <i class="bi bi-speedometer2" style="font-size: 3rem;"></i>
-      <h3>{{i.cantPasos}}</h3>
+      <h3>{{vaca.pasos}}</h3>
     </div>
     <div class="col">
       <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>
-      <h3>{{i.ultimaTemp}}</h3>
+      <h3>{{vaca.temperatura}}°</h3>
     </div>
   </div>
 </div>

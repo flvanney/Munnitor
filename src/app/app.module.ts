@@ -20,7 +20,7 @@ import { CargaGanadoComponent } from './carga-ganado/carga-ganado.component';
 import { CargaCaravanaComponent } from './carga-caravana/carga-caravana.component';
 import { InformeIndividuoComponent } from './informe-individuo/informe-individuo.component';
 import { PasosComponent } from './graficos/pasos/pasos.component';
-import { PruebaService } from './services/prueba.service'
+import { MoonitorService } from './services/moonitor.service'
 
 @NgModule({
   declarations: [
@@ -56,7 +56,7 @@ import { PruebaService } from './services/prueba.service'
     HttpClientModule
   ],
   providers: [
-    PruebaService
+    MoonitorService
   ],
   bootstrap: [AppComponent]
 })

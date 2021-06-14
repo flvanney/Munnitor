@@ -6,16 +6,19 @@ import { Observable } from 'rxjs';
 @Injectable({
     providedIn:'root'
 })
-export class PruebaService{
+export class MoonitorService{
 
     constructor(private http: HttpClient){}
 
     getDatosGanado():Observable<any>{
         return this.http.get<any>('/ganado/list-all');
     }
-    getUsers():Observable<any>{
-        return this.http.get<any>('/users/login');
+    getGanadoPrincipal():Observable<any>{
+        return this.http.get<any>('/ganado/principal?idTambo=1&idEmpresa=1');
     }
+    //getGanadoPorEmpresa():Observable<any>{
+    //    return this.http.get<any>('/ganado/verGanadoEmpresa/1');
+    //}
 
 
 }
