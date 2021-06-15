@@ -9,7 +9,7 @@ import { MoonitorService } from '../services/moonitor.service';
   providers: [MoonitorService],
 })
 export class DashboardComponent implements OnInit {
-  
+
   vacas: any[] = [];
 
 
@@ -30,16 +30,16 @@ export class DashboardComponent implements OnInit {
     }
   });
 
-  /*this.moonitorService.getDatosGanado()
+  this.moonitorService.getDatosGanado()
   .subscribe(data => {
     console.log("----------------------------------->",data)
-  });*/
+  });
 
 
 }
 
 
-    
+
     /*this.pruebaService.getUsers()
     .subscribe(data => {
       console.log("-----------------------------------||||---->",data)

@@ -14,8 +14,8 @@ export class PasosComponent implements OnInit {
     scales: { xAxes: [{}],
       yAxes: [{
         ticks: {
-        min: 15000,
-        max: 5000,
+        min: 150,
+        max: 50,
         }
       }] }
   };
@@ -35,7 +35,7 @@ export class PasosComponent implements OnInit {
   ];
 
   constructor() { }
-  static datos: number[] = [9876, 9754, 9645, 10017, 11876, 8464, 8753];
+  static datos: number[] = [86, 92, 105, 114, 106, 98, 109];
   static fecha: string[] = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
 
   ngOnInit(): void {

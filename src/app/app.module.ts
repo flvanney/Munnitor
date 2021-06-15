@@ -49,7 +49,7 @@ import { MoonitorService } from './services/moonitor.service'
       {path: 'dashboard', component: DashboardComponent},
       {path: 'cargaGanado', component: CargaGanadoComponent},
       {path: 'cargaCaravana', component: CargaCaravanaComponent},
-      {path: 'informeIndividuo', component: InformeIndividuoComponent},
+      {path: 'informeIndividuo/:id', component: InformeIndividuoComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: '**', component: Error404Component},
     ]),
