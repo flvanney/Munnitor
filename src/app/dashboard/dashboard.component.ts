@@ -23,8 +23,11 @@ export class DashboardComponent implements OnInit {
   iniciar(){
   this.moonitorService.getGanadoPrincipal()
   .subscribe(data => {
-    this.vacas=data;
-    console.log("------------------------------>",this.vacas);
+    for(let d of data){
+      if(d['temperatura'] !== undefined && d['pasos'] !== 0 && d['pasos'] !== undefined  ){
+        this.vacas.push(d);
+      }
+    }
   });
 
   /*this.moonitorService.getDatosGanado()
