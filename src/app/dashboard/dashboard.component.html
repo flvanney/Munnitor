@@ -16,7 +16,7 @@
   </div>
 </div>
 <div *ngFor="let vaca of vacas" class="container border-bottom border-dark">
-  <div class="row align-items-center h-100">
+  <div class="row align-items-center h-100" [routerLink]="['/informeIndividuo',vaca.idGanado]" href="">
     <div class="col">
       <h4>Vaca n° {{vaca.idGanado}}</h4>
       <p>Cuig caravana: {{vaca.cuig}}</p>
