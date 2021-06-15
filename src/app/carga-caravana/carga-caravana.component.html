@@ -85,7 +85,7 @@
     </div>
 
     <div class="col-auto">
-      <button type="submit" [disabled]="!formularioCaravana.valid" class="btn btn-primary">Submit</button>
+      <button type="submit" [disabled]="!formularioCaravana.valid" (click)="enviar()" class="btn btn-primary">Submit</button>
     </div>
   </form>
 </div>

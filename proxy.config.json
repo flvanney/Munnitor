@@ -5,6 +5,12 @@
         "changeOrigin":"true"
     },
 
+    "/caravana/*":{
+        "target": "http://localhost:8080",
+        "secure":false,
+        "changeOrigin":"true"
+    },
+
     "/users/*":{
         "target": "http://www.rebichada.com.ar:8080",
         "secure":false,

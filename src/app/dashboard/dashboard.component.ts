@@ -12,8 +12,6 @@ export class DashboardComponent implements OnInit {
 
   vacas: any[] = [];
 
-
-
   constructor(private moonitorService : MoonitorService) { }
 
   ngOnInit(): void {
